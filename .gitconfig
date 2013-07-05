@@ -1,0 +1,36 @@
+[color] 
+diff = auto 
+status = auto 
+branch = auto
+
+[alias] 
+amend = commit --amend
+br = branch -v
+ci = commit 
+co = checkout
+cp = cherry-pick -x
+g = grep -n --color -E
+l = log --pretty=oneline --abbrev-commit --graph --decorate
+nb = checkout -b
+rb = svn rebase 
+rt = reset --hard
+st = status 
+pl = pull
+uncommit = reset --soft HEAD^
+unstage = reset HEAD
+who = shortlog -n -s --no-merges
+
+[push] 
+default = matching
+
+[receive]
+denyCurrentBranch = ignore
+[user]
+name = Joey wang
+email = wxluckly@gmail.com
+[core]
+excludesfile = /home/joey/.gitignore
+[credential]
+helper = cache --timeout=3600
+[github]
+user = wxluckly
